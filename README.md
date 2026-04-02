@@ -1,2 +1,2 @@
 # BoshaPets
-A game similar to adopt me.
+A game similar to `Adopt Me`.
