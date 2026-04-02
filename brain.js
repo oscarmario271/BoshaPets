@@ -1,11 +1,11 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 
 const scene = new THREE.Scene();
+const container = document.getElementById('game');
 const width = container.clientWidth;
 const height = container.clientHeight;
 const renderer = new THREE.WebGLRenderer();
 const composer = new THREE.EffectComposer(renderer);
-const container = document.getElementById('game');
 const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 
 renderer.setSize(width, height);
