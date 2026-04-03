@@ -8,7 +8,7 @@ const container = document.getElementById('game');
 const width = container.clientWidth;
 const height = container.clientHeight;
 const renderer = new THREE.WebGLRenderer();
-const composer = new THREE.EffectComposer(renderer);
+const composer = new EffectComposer(renderer);
 const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 
 renderer.setSize(width, height);
