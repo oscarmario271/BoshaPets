@@ -1,8 +1,8 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+import * as THREE from 'three';
 
-import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/EffectComposer.js?module';
-import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/RenderPass.js?module';
-import { UnrealBloomPass } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/UnrealBloomPass.js?module';
+import { EffectComposer } from 'three/EffectComposer';
+import { RenderPass } from 'three/RenderPass';
+import { UnrealBloomPass } from 'three/UnrealBloomPass';
 
 const scene = new THREE.Scene();
 const container = document.getElementById('game');
@@ -24,7 +24,7 @@ const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, windo
   0.6, // radius
   0.2 // threshold
 );
-
+e 
 scene.add(light);
 scene.add(chara);
 composer.addPass(bloomPass);
